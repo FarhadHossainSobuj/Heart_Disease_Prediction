@@ -23,6 +23,7 @@ public class UserLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
+
         usernameText = (EditText) findViewById(R.id.username);
         passwordText = (EditText) findViewById(R.id.password);
         signUpButton = (Button) findViewById(R.id.signup);
@@ -33,16 +34,18 @@ public class UserLoginActivity extends AppCompatActivity {
         Boolean signup = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("signup", true);
 
+
         if(signup)
         {
             signUpButton.setVisibility(View.VISIBLE);
             loginButton.setVisibility(View.GONE);
+            setTitle("Please Sign Up First");
         }
         else
         {
             signUpButton.setVisibility(View.GONE);
             loginButton.setVisibility(View.VISIBLE);
-
+            setTitle("Please Login");
         }
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
