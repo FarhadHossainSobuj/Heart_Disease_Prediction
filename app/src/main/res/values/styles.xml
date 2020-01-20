@@ -7,5 +7,34 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="back" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">#353333</item>
+
+    </style>
+    <style name="AppCustomStyle" parent="android:Theme.Light">
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">#fff</item>
+        <item name="android:color">#fff</item>
+        <item name="android:background">@color/item_background_color</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="myTextViewStyle" parent="android:Theme.Light">
+        <item name="android:textColor">@color/my_tv_text_color</item>
+        <item name="android:background">@color/background_color</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+    <style name="edit_text_style" parent="android:Theme.Light">
+        <item name="android:textColor">@color/my_tv_text_color</item>
+        <item name="android:textColorHint">@color/my_tv_text_color</item>
+        <item name="android:background">@color/item_background_color</item>
+        <item name="android:padding">8dp</item>
+    </style>
 
 </resources>

@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="item_background_color">#676767</color>
+    <color name="background_color">#878787</color>
+    <color name="my_spinner_text_color">#AD1D1D</color>
+    <color name="my_tv_text_color">#fff</color>
+    <color name="button_color">#FF9900</color>
 </resources>
