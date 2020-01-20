@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class UserLoginActivity extends AppCompatActivity {
     private UserViewModel userViewModel;
     private EditText usernameText;
@@ -64,18 +66,25 @@ public class UserLoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean isValid = userViewModel.checkValidLogin(usernameText.getText().toString(), passwordText.getText().toString());
-                if(isValid)
-                {
-                    Toast.makeText(getBaseContext(), "Successfully Logged In!", Toast.LENGTH_LONG).show();
-                    Log.i("Successful_Login", "Login was successful");
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(intent);
-                }
-                else
-                {
-                    Toast.makeText(getBaseContext(), "Invalid Login!", Toast.LENGTH_SHORT).show();
-                    Log.i("Unsuccessful_Login", "Login was not successful");
+                String username = usernameText.getText().toString();
+                String password = passwordText.getText().toString();
+
+                try {
+                    boolean isValid = userViewModel.checkValidLogin(""+username,""+ password);
+                    if(isValid)
+                    {
+                        Toast.makeText(getBaseContext(), "Successfully Logged In!", Toast.LENGTH_LONG).show();
+                        Log.i("Successful_Login", "Login was successful");
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
+                    }
+                    else
+                    {
+                        Toast.makeText(getBaseContext(), "Invalid Login!", Toast.LENGTH_SHORT).show();
+                        Log.i("Unsuccessful_Login", "Login was not successful");
+                    }
+                } catch (Exception e){
+                    Toast.makeText(UserLoginActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
                 }
             }
         });

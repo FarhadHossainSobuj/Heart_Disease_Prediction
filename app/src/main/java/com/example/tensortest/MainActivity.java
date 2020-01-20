@@ -69,13 +69,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             e.printStackTrace();
         }
 
-//        spChest.setOnItemSelectedListener(this);
-//        spEcg.setOnItemSelectedListener(this);
-//        spCa.setOnItemSelectedListener(this);
-//        spExang.setOnItemSelectedListener(this);
-//        spThal.setOnItemSelectedListener(this);
-//        spSlope.setOnItemSelectedListener(this);
-//        spGender.setOnItemSelectedListener(this);
         getSpinnerValues();
 
         spChest.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -159,12 +152,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spThal.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                inputVal[12] = Float.parseFloat(""+i);
+                inputVal[12] = Float.parseFloat(""+(i+1));
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-                inputVal[12] = Float.parseFloat(""+0);
+                inputVal[12] = Float.parseFloat(""+1);
             }
         });
         btnInfer.setOnClickListener(new View.OnClickListener() {
@@ -175,13 +168,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 inputVal[4] = Float.parseFloat(edtChol.getText().toString());
                 inputVal[7] = Float.parseFloat(edtHeartRate.getText().toString());
                 inputVal[9] = Float.parseFloat(edtOldPeak.getText().toString());
-                Toast.makeText(MainActivity.this, ""+inputVal[0] +
-                        ", "+inputVal[1] + ", " + inputVal[2] +
-                        ", " + inputVal[3], Toast.LENGTH_SHORT).show();
+
                 float prediction = doInference();
                 Intent intent = new Intent(getApplicationContext(), PredictionActivity.class);
                 intent.putExtra("prediction", "" + prediction);
                 startActivity(intent);
+                finish();
             }
         });
 

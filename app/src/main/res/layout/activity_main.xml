@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Chest pain type:" />
+                android:text="Chest Pain:" />
 
             <Spinner
                 android:id="@+id/spChestPain"
@@ -69,23 +69,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Blood pressure in rest" />
+                android:text="Blood pressure in Rest" />
 
             <EditText
                 android:id="@+id/edtBP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:inputType="number"
                 style="@style/edit_text_style"
-                android:hint="Blood pressure"
-                android:inputType="textPersonName" />
+                android:hint="Blood pressure" />
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Chol : Serum cholesterol in mg" />
+                android:text="Serum cholesterol in mg" />
 
             <EditText
                 android:id="@+id/edtChol"
@@ -94,14 +94,14 @@
                 android:ems="10"
                 style="@style/edit_text_style"
                 android:hint="Enter chol in mg"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Fasting blood sugar >120mg?" />
+                android:text="Fasting Blood Sugar > 120mg?" />
 
             <Spinner
                 android:id="@+id/spFBS"
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Resting electrocardio graphic result" />
+                android:text="Resting Electrocardio Graphic Result" />
 
             <Spinner
                 android:id="@+id/spECGLevel"
@@ -136,14 +136,14 @@
                 android:ems="10"
                 style="@style/edit_text_style"
                 android:hint="Enter heart rate"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Exang: pain during exaercise" />
+                android:text="Exang: Exercise Induced Angina" />
 
             <Spinner
                 android:id="@+id/spExang"
@@ -156,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Oldpeak: ST depression induced by exercise relative to rest" />
+                android:text="Oldpeak: ST Depression Induced by Exercise" />
 
             <EditText
                 android:id="@+id/edtOldPeak"
@@ -165,14 +165,14 @@
                 android:ems="10"
                 style="@style/edit_text_style"
                 android:hint="Enter oldpeak (0 - 6.2)"
-                android:inputType="textPersonName" />
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Slope: the slope of the peak exercise ST segment" />
+                android:text="Slope Of The Peak Exercise ST Segment" />
 
             <Spinner
                 android:id="@+id/spSlope"
@@ -185,7 +185,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="ca: number of major vessels (0-3) colored by flourosopy" />
+                android:text="Number of Major Vessels (0-3) Colored by Flourosopy" />
 
             <Spinner
                 android:id="@+id/spCa"
@@ -198,7 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/myTextViewStyle"
-                android:text="Thal: 3 = normal, 6 = fixed defect, 7 = reversable defect" />
+                android:text="Thal Scan Result: 3 = normal, 6 = fixed defect, 7 = reversable defect" />
 
             <Spinner
                 android:id="@+id/spThal"

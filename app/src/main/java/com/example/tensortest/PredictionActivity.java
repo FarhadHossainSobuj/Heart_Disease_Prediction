@@ -22,7 +22,11 @@ public class PredictionActivity extends AppCompatActivity {
 
 
         result = findViewById(R.id.result);
-        result.setText("Prediction is : " + prediction);
+        if(prediction > 0.5){
+            result.setText("You have a risk of heart disease :" + (prediction*100) + "%");
+        } else {
+            result.setText("You are safe from risk of heart disease :" + (prediction*100) + "%");
+        }
 
         btnPredict = findViewById(R.id.btnPredict);
         btnPredict.setOnClickListener(new View.OnClickListener() {

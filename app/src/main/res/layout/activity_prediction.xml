@@ -34,7 +34,7 @@
         android:layout_marginTop="23dp"
         android:layout_marginEnd="20dp"
         android:background="@color/button_color"
-        android:text="Button"
+        android:text="Predict again"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
