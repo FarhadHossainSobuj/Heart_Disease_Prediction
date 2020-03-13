@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="#fff"
+    tools:context=".input_activities.SlopeThalScanActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ltAgeGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/textColorRed"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:text="Slope Of The Peak Exercise ST Segment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spSlope"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Gender"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/textColorRed"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:text="Number of Major Vessels (0-3) Colored by Flourosopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spCa"
+                        android:layout_marginTop="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Gender"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/textColorRed"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:text="Thal Scan Result: 3 = normal, 6 = fixed defect, 7 = reversable defect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spThal"
+                        android:layout_marginTop="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Gender"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSetPrev5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ltAgeGender"
+                android:layout_marginTop="75dp"
+                android:padding="10dp"
+                android:textColor="@color/textColorWhite"
+                android:background="@drawable/button_stroked_rounded_colored"
+                android:text="Set Previous Value" />
+
+            <Button
+                android:id="@+id/btnNext5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ltAgeGender"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/textColorWhite"
+                android:layout_toEndOf="@id/btnSetPrev2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_stroked_rounded_colored"
+                android:text="Next" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -4,6 +4,9 @@
     <string name="sign_up">Sign Up</string>
     <string name="password">Enter your password</string>
     <string name="user_name">Enter your username</string>
+    <string name="app_title">Heart Disease Prediction</string>
+    <string name="app_subtitle">Predict Your Heart Condition</string>
+    <string name="welcome_message">Welcome\n Predict your heart condition</string>
     <array name="chestPain">
         <item>Mid</item>
         <item>Moderate</item>

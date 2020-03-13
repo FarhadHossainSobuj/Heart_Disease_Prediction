@@ -9,4 +9,13 @@
     <color name="my_spinner_text_color">#AD1D1D</color>
     <color name="my_tv_text_color">#fff</color>
     <color name="button_color">#FF9900</color>
+    <color name="formTextColorGray">#576574</color>
+    <color name="textColor">#292929</color>
+    <color name="textColorWhite">#fff</color>
+    <color name="inputBackgroundGreen">#009E0F</color>
+    <color name="btnWhite">#FFFFFF</color>
+    <color name="textColorBlue">#2B78E4</color>
+    <color name="textColorRed">#008577</color>
+    <!--    <color name="textColorRed">#D84A62</color>-->
+    <color name="backgroundWhite">#fff</color>
 </resources>

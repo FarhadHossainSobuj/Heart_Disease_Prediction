@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         setTitle("Heart Disease Prediction");
 
-        spChest = findViewById(R.id.spChestPain);
+        /*spChest = findViewById(R.id.spChestPain);
         spEcg = findViewById(R.id.spECGLevel);
         spExang = findViewById(R.id.spExang);
         spSlope = findViewById(R.id.spSlope);
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
 
 
     }
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        int id = view.getId();
+        /*int id = view.getId();
         switch (id){
             case R.id.spChestPain:
                 inputVal[2] = i;
@@ -368,7 +368,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 inputVal[12] = i;
                 Toast.makeText(this, "" + i, Toast.LENGTH_SHORT).show();
                 break;
-        }
+        }*/
     }
 
     @Override

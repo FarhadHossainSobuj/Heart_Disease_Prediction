@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tensortest">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,18 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultActivity">
+        <activity android:name=".input_activities.HeartRateActivity"></activity>
+        <activity android:name=".input_activities.SlopeThalScanActivity" />
+        <activity android:name=".input_activities.EcgExangOldpeakActivity" />
+        <activity android:name=".input_activities.CholBloodActivity" >
+
+        </activity>
+        <activity android:name=".input_activities.ChestPainBPSActivity" />
+        <activity android:name=".input_activities.AgeGenderActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserLoginActivity">
-
-        </activity>
+        <activity android:name=".ResultActivity" />
         <activity android:name=".PredictionActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
