@@ -313,6 +313,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public float doInference(){
         //float[] inputVal = {34,1,3,118,182,0,0,174,0,0,2,0,2};
         //inputVal[0] = 54;
+        // v1
 
 
         float[][] outputval = new float[1][1];
